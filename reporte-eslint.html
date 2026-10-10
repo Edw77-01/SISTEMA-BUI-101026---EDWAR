@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte de calidad - ESLint</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 35px; color: #222; }
+h1 { color: #174ea6; }
+.resumen { display: flex; gap: 25px; margin: 20px 0; }
+.tarjeta { padding: 15px; background: #f1f4f9; border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #174ea6; color: white; }
+tr:nth-child(even) { background: #f5f5f5; }
+</style>
+</head>
+<body>
+<h1>Reporte de calidad de código</h1>
+<p>Proyecto Vite + React | Análisis estático con ESLint</p>
+<div class="resumen">
+<div class="tarjeta"><b>Archivos analizados</b><h2>9</h2></div>
+<div class="tarjeta"><b>Errores</b><h2>5</h2></div>
+<div class="tarjeta"><b>Advertencias</b><h2>0</h2></div>
+</div>
+<h2>Detalle de hallazgos</h2>
+<table>
+<thead>
+<tr><th>Archivo</th><th>Línea</th><th>Regla</th><th>Descripción</th><th>Tipo</th></tr>
+</thead>
+<tbody>
+        <tr>
+            <td>C:\Users\usuario\Documents\MOOC CALIDAD DE SOFTWARE\MIGRACION ACT6 - TEST\src\app.jsx</td>
+            <td>11</td>
+            <td>no-unused-vars</td>
+            <td>&#x27;React&#x27; is defined but never used.</td>
+            <td>Error</td>
+        </tr>
+        
+
+        <tr>
+            <td>C:\Users\usuario\Documents\MOOC CALIDAD DE SOFTWARE\MIGRACION ACT6 - TEST\src\app.jsx</td>
+            <td>11</td>
+            <td>no-unused-vars</td>
+            <td>&#x27;useContext&#x27; is defined but never used.</td>
+            <td>Error</td>
+        </tr>
+        
+
+        <tr>
+            <td>C:\Users\usuario\Documents\MOOC CALIDAD DE SOFTWARE\MIGRACION ACT6 - TEST\src\components\funcions\PROCESOC\BC\scriptbanco.jsx</td>
+            <td>1</td>
+            <td>no-unused-vars</td>
+            <td>&#x27;React&#x27; is defined but never used.</td>
+            <td>Error</td>
+        </tr>
+        
+
+        <tr>
+            <td>C:\Users\usuario\Documents\MOOC CALIDAD DE SOFTWARE\MIGRACION ACT6 - TEST\src\components\funcions\PROCESOC\BC\scriptbanco.jsx</td>
+            <td>174</td>
+            <td>no-useless-assignment</td>
+            <td>The value assigned to &#x27;aprobado&#x27; is not used in subsequent statements.</td>
+            <td>Error</td>
+        </tr>
+        
+
+        <tr>
+            <td>C:\Users\usuario\Documents\MOOC CALIDAD DE SOFTWARE\MIGRACION ACT6 - TEST\src\components\funcions\PROCESOC\BC\scriptbanco.jsx</td>
+            <td>199</td>
+            <td>no-unused-vars</td>
+            <td>&#x27;obtenerEstadoEvaluacion&#x27; is assigned a value but never used.</td>
+            <td>Error</td>
+        </tr>
+        </tbody>
+</table>
+</body>
+</html>

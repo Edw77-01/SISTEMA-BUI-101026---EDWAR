@@ -1,0 +1,279 @@
+﻿.Home {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(186deg, #000000, #2e2e2e);
+    overflow-x: hidden;
+      width: 100vw;       /* 100% del ancho de la pantalla */
+  height: 100dvh;     /* 100% del alto dinámico de la pantalla */
+}
+
+
+/* SECCIÓN PRINCIPAL */
+#i1 {
+    position: relative;
+    width: 100%;
+    min-height: 750px;
+    margin-top: 150px;
+    overflow: hidden;
+
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TÍTULO */
+#t1i1 {
+    transition: transform 1s ease-in-out, color 0.9s ease;
+
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+
+    font-size: clamp(80px, 15vw, 230px);
+    font-weight: 600;
+
+    position: relative;
+    z-index: 4;
+}
+
+
+/* PERSONAJES */
+
+#img1i1 {
+    position: absolute;
+    height: 350px;
+    left: 30%;
+    bottom: 120px;
+    z-index: 3;
+}
+
+#img2i1 {
+    position: absolute;
+    height: 350px;
+    left: 60%;
+    bottom: 120px;
+    z-index: 6;
+}
+
+#img3i1 {
+    position: absolute;
+    height: 350px;
+    left: 77%;
+    bottom: 80px;
+    z-index: 3;
+}
+
+#img4i1 {
+    position: absolute;
+    height: 450px;
+    left: 34%;
+    bottom: 120px;
+    z-index: 2;
+}
+
+#img5i1 {
+    position: absolute;
+    height: 360px;
+    left: 0;
+    bottom: 120px;
+    z-index: 5;
+}
+
+#img6i1 {
+    position: absolute;
+    height: 340px;
+    left: 77%;
+    bottom: 80px;
+    z-index: 5;
+}
+
+
+/* FONDO / ELEMENTOS INFERIORES */
+
+#img7i1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: -325px;
+    z-index: 8;
+}
+
+#img8i1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: -5px;
+    z-index: 8;
+    margin-top: -10px;
+}
+
+
+/* EFECTO DEL TÍTULO */
+
+#i1:hover #t1i1 {
+    transform: scale(1.08);
+}
+
+
+/* BOTONES */
+
+#btns {
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    width: 100%;
+    margin-top: 320px;
+}
+
+
+/* BOTÓN */
+
+#b1 {
+    position: relative;
+
+    font-family: 'Barlow', sans-serif;
+
+    background-color: transparent;
+    border: 4px solid wheat;
+
+    color: white;
+    border-radius: 53px;
+
+    padding: 15px 25px;
+
+    font-size: clamp(18px, 2.5vw, 33px);
+    font-weight: 800;
+
+    z-index: 10;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.5s ease-in-out,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+#b1:hover {
+    background-color: white;
+    color: #000000;
+    transform: scale(1.03);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    #i1 {
+        min-height: 650px;
+        margin-top: 100px;
+    }
+
+    #img1i1,
+    #img2i1,
+    #img3i1,
+    #img5i1,
+    #img6i1 {
+        height: 260px;
+    }
+
+    #img4i1 {
+        height: 330px;
+    }
+
+    #t1i1 {
+        font-size: clamp(70px, 16vw, 150px);
+    }
+
+    #btns {
+        gap: 15px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    #i1 {
+        min-height: 550px;
+        margin-top: 70px;
+    }
+
+    #t1i1 {
+        font-size: clamp(55px, 18vw, 100px);
+        padding-top: 20px;
+    }
+
+    #img1i1,
+    #img2i1,
+    #img3i1,
+    #img5i1,
+    #img6i1 {
+        height: 190px;
+    }
+
+    #img4i1 {
+        height: 240px;
+    }
+
+    #img1i1 {
+        left: 20%;
+    }
+
+    #img2i1 {
+        left: 55%;
+    }
+
+    #img3i1 {
+        left: 70%;
+    }
+
+    #img5i1 {
+        left: -5%;
+    }
+
+    #img6i1 {
+        left: 70%;
+    }
+
+    #btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #b1 {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+    #b2 {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}

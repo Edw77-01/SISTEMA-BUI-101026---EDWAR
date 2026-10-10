@@ -1,0 +1,63 @@
+# Ejecutar todas las pruebas
+npm run test:e2e
+
+# Ejecutar en modo UI (recomendado para desarrollo)
+npm run test:e2e:ui
+
+# Ejecutar en modo debug
+npm run test:e2e:debug
+
+# Ejecutar una prueba específica
+npx playwright test e2e/example.spec.ts
+
+# Ejecutar en un navegador específico
+npx playwright test --project=chromium
+
+
+
+
+"lightroom de Google
+# Análisis básico
+lighthouse https://tu-sitio.com
+
+# Con opciones específicas
+lighthouse https://tu-sitio.com --view
+
+# Generar reporte en HTML
+lighthouse https://tu-sitio.com --output=html --output-path=./report.html
+lighthouse https://localhost:5173 --output=html --output-path=./report.html
+
+
+
+# Auditar solo performance y SEO
+lighthouse https://tu-sitio.com --only-categories=performance,seo
+
+# Generar reporte JSON
+npx lighthouse http://localhost:3000 --output=json --output-path=./lighthouse-report.json
+
+# Auditar solo ciertas categorías
+npx lighthouse http://localhost:3000 --only-categories=performance,accessibility
+
+# Especificar puerto diferente (si usas otro puerto)
+npx lighthouse http://localhost:5173 --output=html --output-path=./lighthouse-report.html
+
+# Ejecutar múltiples veces para promediar resultados
+npx lighthouse http://localhost:3000 --runs=3
+
+# Crea una carpeta para los reportes
+mkdir lighthouse-reports
+
+# Ejecuta Lighthouse guardando allí
+npx lighthouse http://localhost:5173 --output=html --output-path=./lighthouse-reports/report.html --view
+
+
+
+#Docker
+# Ejecutar pruebas en Docker
+docker-compose run react-app npm test compatibility.test.js -- --watchAll=false
+
+# Con cobertura
+docker-compose run react-app npm test compatibility.test.js -- --coverage --watchAll=false
+
+#REPORTE ESLINT
+npx eslint . -f html -o reporte-eslint.html

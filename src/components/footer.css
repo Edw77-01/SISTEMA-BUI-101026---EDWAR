@@ -1,0 +1,333 @@
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 30px 20px 0 20px;
+
+  box-sizing: border-box;
+
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Barlow", sans-serif;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   TITULO
+========================= */
+
+.footer-title {
+  margin: 0 0 25px 0;
+
+  font-size: 28px;
+
+  text-align: center;
+}
+
+
+/* =========================
+   REDES
+========================= */
+
+.rednet {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.social-card {
+  width: 165px;
+  height: 185px;
+
+  padding: 8px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  position: relative;
+
+  color: #ffffff;
+
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   FACEBOOK
+========================= */
+
+.facebook {
+  background: linear-gradient(
+    to left top,
+    #0274ff,
+    #002f68
+  );
+}
+
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.instagram {
+  background: linear-gradient(
+    143deg,
+    #fcaf45,
+    #e1306c,
+    #833ab4,
+    #1234e0
+  );
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp {
+  background: linear-gradient(
+    135deg,
+    #25d366,
+    #1ca14d,
+    #075e54
+  );
+}
+
+
+/* =========================
+   YOUTUBE
+========================= */
+
+.youtube {
+  background: linear-gradient(
+    180deg,
+    #ff0000,
+    #c40202
+  );
+}
+
+
+/* =========================
+   X
+========================= */
+
+.x {
+  background: linear-gradient(
+    to top,
+    #0f0f0f,
+    #000000
+  );
+
+  border: 1px solid #ffffff;
+}
+
+
+/* =========================
+   ICONOS
+========================= */
+
+.social-icon {
+  list-style: none;
+
+  width: 100%;
+  height: 60px;
+
+  margin: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 50px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* =========================
+   ENLACES
+========================= */
+
+.social-icon a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================
+   NOMBRES
+========================= */
+
+.social-name {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+  text-align: center;
+
+  max-width: 100%;
+
+  overflow-wrap: break-word;
+
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.social-card:hover {
+  transform: scale(1.05);
+
+  z-index: 2;
+}
+
+
+.social-card:hover .social-icon {
+  transform: scale(1.15);
+}
+
+
+.social-card:hover .social-name {
+  transform: scale(1.08);
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contactdiv {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contact {
+  width: 100%;
+
+  min-height: 50px;
+
+  padding: 15px 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+
+  background-color: #000000;
+
+  color: #ffffff;
+
+  font-style: italic;
+
+  font-size: 10px;
+}
+
+
+.contact h2 {
+  margin: 0;
+
+  text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .rednet {
+    gap: 15px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .rednet {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .social-card {
+    width: 145px;
+    height: 170px;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+

@@ -1,0 +1,487 @@
+.gotobb_page {
+
+  color: white;
+
+  font-family: 'Barlow', sans-serif;
+
+  background: linear-gradient(47deg, #000000, #383838, #3b3b3b);
+
+  background-size: 130%;
+
+  background-repeat: no-repeat;
+
+  overflow-x: hidden;
+
+  min-height: 100vh;
+
+  box-sizing: border-box;
+
+}
+
+
+/* CONTENEDOR PRINCIPAL DE CREDITO BB */
+
+#allBB {
+
+  margin-left: 70px;
+
+}
+
+
+#BB1 {
+
+  height: 70px;
+
+  top: 4vw;
+
+  position: relative;
+
+  left: 2vw;
+
+}
+
+
+#allBB h1 {
+
+  font-size: 60px;
+
+}
+
+
+#allBB h2 {
+
+  top: 40px;
+
+  font-size: 30px;
+
+  width: 380px;
+
+  height: 50px;
+
+}
+
+
+/* TEXTO INICIAL */
+
+#allBB #sentenceBB1 {
+
+  height: auto;
+
+  margin-bottom: 80px;
+
+  line-height: 1.3;
+
+}
+
+
+/* FASE 1 */
+
+#allBB #oculBB0 {
+
+  position: relative;
+
+  top: 80px;
+
+}
+
+
+/* FASE 2 */
+
+#allBB #oculBB1 {
+
+  position: relative;
+
+  top: 80px;
+
+}
+
+
+#allBB #oculBB1 button {
+
+  left: 460px;
+
+  bottom: 20px;
+
+}
+
+
+/* FASE 3 */
+
+#allBB #oculBB2 {
+
+  position: relative;
+
+  top: 80px;
+
+}
+
+
+#allBB #oculBB2 button {
+
+  left: 460px;
+
+  bottom: 20px;
+
+}
+
+
+/* INPUTS */
+
+#allBB input {
+
+  background-color: transparent;
+
+  width: 500px;
+
+  height: 50px;
+
+  border: 6px white solid;
+
+  border-radius: 20px;
+
+  color: white;
+
+  padding-left: 20px;
+
+  font-family: 'Barlow', sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  transition: transform 0.5s ease-in-out;
+
+  box-sizing: border-box;
+
+}
+
+
+#allBB input:hover {
+
+  transform: scale(1.03);
+
+}
+
+
+#allBB input:focus {
+
+  transform: scale(1.03);
+
+  outline: none;
+
+}
+
+
+#allBB #inputEdad {
+
+  width: 60px;
+
+}
+
+
+#allBB #inputCony {
+
+  width: 110px;
+
+}
+
+
+#allBB #inputHijos {
+
+  width: 110px;
+
+}
+
+
+/* SELECT */
+
+#allBB select {
+
+  background-color: transparent;
+
+  width: 400px;
+
+  height: 70px;
+
+  border: 6px white solid;
+
+  border-radius: 20px;
+
+  color: white;
+
+  padding-left: 20px;
+
+  font-family: 'Barlow', sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  transition: transform 0.5s ease-in-out;
+
+  box-sizing: border-box;
+
+}
+
+
+#allBB select:hover {
+
+  transform: scale(1.03);
+
+}
+
+
+#allBB select:focus {
+
+  transform: scale(1.03);
+
+  outline: none;
+
+}
+
+
+/* OPCIONES DEL SELECT */
+
+#allBB option {
+
+  background-color: rgba(0, 0, 0, 0.466);
+
+  color: white;
+
+  font-family: 'Barlow', sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+}
+
+
+#allBB optgroup {
+
+  font-size: 30px;
+
+  background-color: rgba(0, 0, 0, 0.692);
+
+}
+
+
+/* BOTÓN */
+
+#allBB button {
+
+  position: relative;
+
+  font-family: 'Barlow', sans-serif;
+
+  padding: 20px;
+
+  left: 60vw;
+
+  bottom: 90px;
+
+  border-radius: 53px;
+
+  width: 300px;
+
+  border: 6px white solid;
+
+  color: white;
+
+  font-size: 33px;
+
+  font-weight: 800;
+
+  background-color: #000000b4;
+
+  transition:
+
+    transform 0.5s ease-in-out,
+
+    background-color 0.3s ease,
+
+    color 0.3s ease;
+
+  box-sizing: border-box;
+
+}
+
+
+#allBB button:hover {
+
+  background-color: white;
+
+  color: #000000;
+
+  transform: scale(1.03);
+
+}
+
+
+/* IMAGEN PRINCIPAL FASE 1 */
+
+#imgpbb {
+
+  position: absolute;
+
+  height: 1120px;
+
+  left: 47vw;
+
+  top: -10vw;
+
+}
+
+
+/* POPUP */
+
+#popup {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  background-color: rgb(0, 0, 0);
+
+  z-index: 9999;
+
+  color: white;
+
+  font-weight: 400;
+
+}
+
+
+/* CONTENIDO DEL POPUP */
+
+#textpopup {
+
+  width: 70%;
+
+  height: 100%;
+
+  padding-left: 60px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+}
+
+
+/* IMAGEN DEL POPUP */
+
+#imageCI {
+
+  width: 30%;
+
+  height: 100%;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+}
+
+
+#imageCI img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 0;
+
+}
+
+
+/* BOTÓN DEL POPUP */
+
+#buttomCI {
+
+  padding: 20px;
+
+  margin-top: 450px;
+
+  font-size: 40px;
+
+  font-weight: 400;
+
+  background-color: black;
+
+  color: white;
+
+  border: 3px solid white;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  transition:
+
+    background-color 0.3s ease,
+
+    color 0.3s ease;
+
+}
+
+
+#buttomCI:hover {
+
+  background-color: white;
+
+  color: black;
+
+}
+
+
+/* IMAGEN FASE 2 */
+
+#imgpbb2 {
+
+  position: absolute;
+
+  height: 720px;
+
+  left: 64vw;
+
+  top: -13vw;
+
+  border-radius: 24px;
+
+}
+
+
+/* IMAGEN FASE 3 */
+
+#imgpbb3 {
+
+  position: absolute;
+
+  height: 720px;
+
+  left: 64vw;
+
+  top: -13vw;
+
+  border-radius: 24px;
+
+}

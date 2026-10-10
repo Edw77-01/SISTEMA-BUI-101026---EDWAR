@@ -1,0 +1,65 @@
+#header{
+width: 99.7vw;
+ 
+position: relative;
+top: 25px;
+    left: -10px;
+    width: 100%
+    
+ 
+}
+#imglogo2{
+z-index: 6;
+position: absolute;
+display: block;
+height: 30px;
+color: transparent;
+top: 45px;
+left: 85px;
+z-index: 6;
+
+}
+
+#imglogo1{
+z-index: 7;
+position: relative;
+display: block;
+background-color: rgba(0, 0, 0, 0);
+height: 70px;
+
+z-index: 7;
+left: 50px;
+}
+
+#imglogo2{
+    font-family: 'Barlow', sans-serif;
+transition: transform 1s ease-out, color 1s ease-in;
+font-size: 11px;
+left: 10%;
+
+}
+
+#imglogo3{
+z-index: 7;
+position: absolute;
+display: block;
+background-color: rgba(0, 0, 0, 0);
+height: 50px;
+
+z-index: 7;
+left: 50vw;
+top: 2vw;
+}
+#imgdiv{
+    top: 10px;
+    width: 99vw;
+height: 120px;
+}
+
+#imgdiv:hover #imglogo2 {
+    display: block;
+   color: white;
+  transform: translateY(40%);
+  transition: transform 1s ease-out, color 2s ease-in;
+     
+}

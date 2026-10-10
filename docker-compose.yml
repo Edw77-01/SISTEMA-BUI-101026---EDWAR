@@ -1,0 +1,13 @@
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-tests
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CI=true
+    stdin_open: true
+    tty: true
